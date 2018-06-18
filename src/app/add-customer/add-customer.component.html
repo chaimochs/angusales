@@ -1,0 +1,21 @@
+<div class="form">
+  <h3>Current Dog: {{ dogName }}</h3>
+  <ul>
+    <li>
+      <input type="text" [(ngModel)]="dog.name" placeholder="customerId">
+    </li>
+    <li>
+      <input type="text" [(ngModel)]="dog.weight" placeholder="First Name">
+    </li>
+    <li>
+      <input type="text" [(ngModel)]="dog.owner" placeholder="Last Name">
+    </li>
+    <li>
+        <input type="text" [(ngModel)]="dog.owner" placeholder="Company">
+      </li>
+      <li>
+        <input type="text" [(ngModel)]="dog.owner" placeholder="Last Name">
+      </li>
+  </ul>
+  <button mat-button (click)="addStuff()" color="primary">Add Stuff</button>
+</div>

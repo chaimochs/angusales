@@ -1,0 +1,52 @@
+<span class='spacer'></span>
+<span class='spacer'></span>
+<!--button mat-button (click)="getStuff()">Get Stuff</button-->
+
+<div class="container">
+  <h1>Customers</h1>
+  <ul class="responsive-table">
+      <li class="table-header">
+        <div class="col col-1">Customer Id</div>
+        <div class="col col-2">First Name</div>
+        <div class="col col-3">Last Name</div>
+        <div class="col col-4">Company</div>
+        <div class="col col-5">email</div>
+      </li>
+      </ul>
+      </div>
+ 
+      <app-customer *ngFor="let customer of customers" [customer]="customer"></app-customer>
+
+
+<!--div class="example-container mat-elevation-z8" [dataSource]="dataSource">
+  <mat-table #table>
+
+    <ng-container matColumnDef="customerId">
+      <mat-header-cell *matHeaderCellDef> Id </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{customer.customerId}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="FirstName">
+      <mat-header-cell *matHeaderCellDef> First Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{customer.firstName}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="LastName">
+      <mat-header-cell *matHeaderCellDef> Last Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{customer.lastName}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="Company">
+      <mat-header-cell *matHeaderCellDef> Company </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{customer.company}} </mat-cell>
+    </ng-container>
+
+     <ng-container matColumnDef="email">
+      <mat-header-cell *matHeaderCellDef> Email </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{customer.email}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div-->
